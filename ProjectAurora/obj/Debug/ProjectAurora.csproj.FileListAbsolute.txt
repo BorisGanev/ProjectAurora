@@ -53,3 +53,5 @@ c:\users\boris\documents\visual studio 2013\Projects\ProjectAurora\ProjectAurora
 c:\users\boris\documents\visual studio 2013\Projects\ProjectAurora\ProjectAurora\obj\Debug\ProjectAurora.csprojResolveAssemblyReference.cache
 c:\users\boris\documents\visual studio 2013\Projects\ProjectAurora\ProjectAurora\obj\Debug\ProjectAurora.dll
 c:\users\boris\documents\visual studio 2013\Projects\ProjectAurora\ProjectAurora\obj\Debug\ProjectAurora.pdb
+C:\Users\Boris\documents\visual studio 2013\Projects\ProjectAurora\ProjectAurora\obj\Debug\ProjectAurora.Migrations.InitialCreate.resources
+C:\Users\Boris\documents\visual studio 2013\Projects\ProjectAurora\ProjectAurora\obj\Debug\ProjectAurora.csproj.GenerateResource.Cache

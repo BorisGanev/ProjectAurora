@@ -159,19 +159,25 @@
     <Compile Include="App_Start\RouteConfig.cs" />
     <Compile Include="App_Start\Startup.Auth.cs" />
     <Compile Include="Controllers\AccountController.cs" />
-    <Compile Include="Controllers\GameInfoController.cs" />
+    <Compile Include="Controllers\GameInfoesController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
     <Compile Include="Controllers\ManageController.cs" />
+    <Compile Include="Controllers\NewsModelsController.cs" />
     <Compile Include="Controllers\TestController.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
+    <Compile Include="Migrations\201504301722111_InitialCreate.cs" />
+    <Compile Include="Migrations\201504301722111_InitialCreate.Designer.cs">
+      <DependentUpon>201504301722111_InitialCreate.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Models\AccountViewModels.cs" />
-    <Compile Include="Models\CatalogEntryModel.cs" />
     <Compile Include="Models\GameInfo.cs" />
     <Compile Include="Models\IdentityModels.cs" />
     <Compile Include="Models\ImageModel.cs" />
     <Compile Include="Models\ManageViewModels.cs" />
+    <Compile Include="Models\NewsModel.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Startup.cs" />
   </ItemGroup>
@@ -194,6 +200,7 @@
     <Content Include="Images\Buttons\WebsiteMenuProfileBlack.png" />
     <Content Include="Images\Buttons\WebsiteMenuProfileOrange.png" />
     <Content Include="Images\General\hope_by_imperioli-d76ue11.jpg" />
+    <Content Include="Images\General\menubars.png" />
     <Content Include="Images\Header\WebHeader1200x250.png" />
     <Content Include="Scripts\bootstrap.js" />
     <Content Include="Scripts\bootstrap.min.js" />
@@ -244,15 +251,20 @@
     <Content Include="Views\Manage\VerifyPhoneNumber.cshtml" />
     <Content Include="Views\Shared\Lockout.cshtml" />
     <Content Include="Views\Shared\_LoginPartial.cshtml" />
-    <Content Include="Views\GameInfo\Create.cshtml" />
-    <Content Include="Views\GameInfo\Delete.cshtml" />
-    <Content Include="Views\GameInfo\Details.cshtml" />
-    <Content Include="Views\GameInfo\Edit.cshtml" />
-    <Content Include="Views\GameInfo\Index.cshtml" />
-    <Content Include="Views\Test\GameCatalogTemp.cshtml" />
+    <Content Include="Views\GameInfoes\GameCatalogTemp.cshtml" />
     <Content Include="Views\Test\Dota2.cshtml" />
-    <Content Include="Views\Test\NewsPageTemp.cshtml" />
+    <Content Include="Views\NewsModels\NewsPageTemp.cshtml" />
     <Content Include="Views\Test\BloodborneNews.cshtml" />
+    <Content Include="Views\GameInfoes\Create.cshtml" />
+    <Content Include="Views\GameInfoes\Delete.cshtml" />
+    <Content Include="Views\GameInfoes\Details.cshtml" />
+    <Content Include="Views\GameInfoes\Edit.cshtml" />
+    <Content Include="Views\GameInfoes\Index.cshtml" />
+    <Content Include="Views\NewsModels\Create.cshtml" />
+    <Content Include="Views\NewsModels\Delete.cshtml" />
+    <Content Include="Views\NewsModels\Details.cshtml" />
+    <Content Include="Views\NewsModels\Edit.cshtml" />
+    <Content Include="Views\NewsModels\Index.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
@@ -267,6 +279,11 @@
     <Content Include="fonts\glyphicons-halflings-regular.eot" />
     <Content Include="packages.config" />
     <None Include="Project_Readme.html" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Migrations\201504301722111_InitialCreate.resx">
+      <DependentUpon>201504301722111_InitialCreate.cs</DependentUpon>
+    </EmbeddedResource>
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
